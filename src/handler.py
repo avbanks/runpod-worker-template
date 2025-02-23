@@ -7,7 +7,8 @@ import time
 import uuid
 
 # Load the model once when the serverless function starts
-tts = TTS(model_name="tts_models/en/ljspeech/tacotron2-DDC", gpu=True)
+#tts = TTS(model_name="tts_models/en/ljspeech/tacotron2-DDC", gpu=True)
+tts = TTS(model_name="tts_models/pt/cv/vits", gpu=True)
 
 def text_to_speech(text, output_path="output.wav"):
     """
